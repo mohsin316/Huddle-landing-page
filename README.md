@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop final solution](images/desktop-solution.jpg)
-![mobile final solution](images/mobile-solution.jpg)
+![desktop final solution](images/desktop-solution.png)
+![mobile final solution](images/mobile-solution.png)
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/four-card-feature-section-using-clean-html-and-css-I35nX0-Yf)
+- [Solution URL](https://www.frontendmentor.io/solutions/huddle-landing-page-using-clean-html-and-css-A6iEcnpik)
 - [Live Site URL](https://mohsin316.github.io/Huddle-landing-page/)
 
 ## My process

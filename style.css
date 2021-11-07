@@ -91,6 +91,7 @@ button{
 
 a{
     width: 100%;
+    color: var(--clr-one);
 }
 
 p{
