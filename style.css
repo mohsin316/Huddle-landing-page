@@ -1,0 +1,261 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-one:hsl(257, 40%, 49%);
+    --clr-two:hsl(300, 69%, 71%);
+
+    --ff-one:'Poppins', sans-serif; /*headings*/
+    --ff-two:'Open Sans', sans-serif; /*main body*/
+
+    --ffM:400;
+    --ffB:600;
+}
+
+body{
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-color: var(--clr-one);
+    color: white;
+}
+
+header{
+    padding: 1.5rem 1.25rem;
+}
+
+img{
+    display: block;
+    width: 120px;
+    max-width: 100%;
+}
+
+main{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-holder{
+    height: 180px;
+    width: 100%;
+    background-image: url("images/illustration-mockups.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1, a{
+    font-family: var(--ff-one);
+    text-decoration: none;
+}
+
+h1{
+    padding-top: 3rem;
+    padding-bottom: 1.25rem;
+    font-weight: var(--ffB);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+button{
+    margin-top: 1rem;
+    width: 180px;
+    padding: .5rem 1rem;
+    border-radius: 25px;
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, .75);
+}
+
+a{
+    width: 100%;
+}
+
+p{
+    font-size: 1rem;
+    width: 80%;
+    font-family: var(--ff-two);
+    line-height: 1.5rem;
+}
+
+footer{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+footer > * {
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .35rem;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+button:hover{
+    background-color: var(--clr-two);
+}
+button:hover a{
+    color: white;
+}
+
+footer > *:hover{
+    color: var(--clr-two);
+    border-color: var(--clr-two);
+}
+
+
+@media (min-width: 375px){
+    header{
+        padding: 2rem 1.5rem;
+    }
+    img{
+        width: 150px;
+    }
+    main{
+        margin-top: 2.5rem;
+    }
+    .img-holder{
+        height: 200px;
+        width: 100%;
+    }
+
+    button{
+        margin-top: 1.5rem;
+    }
+
+    footer{
+        margin: 3.5rem;
+    }
+}
+
+@media (min-width: 400px){
+    header{
+        padding: 2rem 1.5rem;
+    }
+    
+    .img-holder{
+        height: 250px;
+        width: 100%;
+    }
+
+    button{
+        margin-top: 1.75rem;
+    }
+
+    h1, p{
+        max-width: 350px;
+    }
+
+}
+
+@media (min-width: 1000px){
+
+    body{
+        min-height: 100vh;
+        background-image: url("images/bg-desktop.svg");
+    }
+
+    header{
+        padding: 2rem 1.75rem;
+    }
+    
+    main{
+        flex-direction: row;
+    }
+
+    .img-holder, .container{
+        flex: 1;
+    }
+
+    .img-holder{
+        height: 350px;
+    }
+
+    .container{
+        align-self: flex-start;
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
+    h1{
+        max-width: 400px;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-top: 2rem;
+    }
+
+    p{
+        max-width: 90%;
+        font-size: 1.1rem;
+    }
+
+    button{
+        padding: .75rem 1rem;
+        width: 150px;
+    }
+
+    footer{
+        justify-content: flex-end;
+        gap: .9rem;
+    }
+
+    footer > *{
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (min-width: 1200px){
+    body{
+        display: grid;
+        min-height: 100vh;
+        place-content: center;
+    }
+    header{
+        padding: 2rem 3.5rem;
+        max-width: 1366px;
+    }
+    .main{
+        width: 1366px;
+    }
+    .container{
+        padding-left: 0;
+    }
+    .img-holder{
+        height: 400px;
+    }
+
+    footer{
+        max-width: 1286px;
+        margin: 0;
+        margin-right: 5rem;
+        justify-content: flex-end;
+    }
+    
+}
